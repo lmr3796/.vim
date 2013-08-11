@@ -1,15 +1,23 @@
 set nocompatible " We are vim!
 
-" Load vimrc for each plugin.
-runtime! sub_vimrc/*.vimrc
+filetype plugin on
+syntax on
 
-set exrc
-set secure
+" Text formatting related
+set expandtab
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
+
+set textwidth=72
+set autoindent   " always set autoindenting on
 
 " Show trailing white space.
 set listchars=trail:~
 set list
 
+" Load vimrc for each plugin.
+runtime! sub_vimrc/*.vimrc
 " Tab key binding
 map <C-t>c :tabnew<CR>
 map <C-t>q :tabclose<CR>
@@ -18,28 +26,25 @@ map <C-t>l :tabnext<CR>
 map <C-t>p :tabprev<CR>
 map <C-t>n :tabnext<CR>
 
+" Look and feel
+set t_Co=256
 set nu
 set showmode
 set ruler
-set expandtab
-set softtabstop=2
-set tabstop=2
-set shiftwidth=2
+colorscheme ir_black_p
 
-syntax on
+" Cursorline only in current window
+autocmd WinLeave * set nocursorline nocursorcolumn
+autocmd WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
 
 set wildmenu
 set backupdir=~/tmp,.,/var/tmp/vi.recover,/tmp
 set directory=~/tmp,/var/tmp/vi.recover,/tmp,.
-set backup		" keep a backup file
-set textwidth=72
-" set shiftwidth=4
+set backup " keep a backup file
 set bs=2 " allow backspacing over everything in insert mode
-set ai   " always set autoindenting on
 set viminfo='20,\"50 " read/write a .viminfo file, don't store more
 set showmatch
-
-set background=dark " another is 'light'
 
 " VIM 6.0,
 if version >= 600
@@ -60,7 +65,6 @@ else
 endif
 
 if version >= 700
-  map <F4> :set invcursorline<CR>
   map g1 :tabn 1<CR>
   map g2 :tabn 2<CR>
   map g3 :tabn 3<CR>
@@ -76,4 +80,6 @@ if version >= 700
   highlight TabLine    term=bold cterm=bold
   highlight clear TabLineFill
 end
+
+set secure
 
