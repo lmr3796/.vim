@@ -1,6 +1,6 @@
 set nocompatible " We are vim!
 
-filetype plugin on
+" Filetype is set in sub_vimrc/vundle.vimrc
 syntax on
 
 " Text formatting related
