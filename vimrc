@@ -33,10 +33,7 @@ set showmode
 set ruler
 colorscheme ir_black_p
 
-" Cursorline only in current window
-autocmd WinLeave * set nocursorline nocursorcolumn
-autocmd WinEnter * set cursorline cursorcolumn
-set cursorline cursorcolumn
+autocmd VimEnter,WinEnter * setlocal cursorline cursorcolumn
 
 set wildmenu
 set backupdir=~/tmp,.,/var/tmp/vi.recover,/tmp
