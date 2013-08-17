@@ -3,17 +3,10 @@ set nocompatible " We are vim!
 " Filetype is set in sub_vimrc/vundle.vimrc
 syntax on
 
-" Text formatting related
-set expandtab
-set softtabstop=2
-set tabstop=2
-set shiftwidth=2
-
-set textwidth=72
 set autoindent   " always set autoindenting on
 
 " Show trailing white space.
-set listchars=trail:~
+set listchars=tab:▸\ ,trail:~
 set list
 
 " Load vimrc for each plugin.
