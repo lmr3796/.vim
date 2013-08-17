@@ -12,9 +12,10 @@ Bundle 'gmarik/vundle'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
 
 " Language support
 Bundle 'jnwhiteh/vim-golang'
 
-filetype indent plugin on
+filetype plugin indent on
 
