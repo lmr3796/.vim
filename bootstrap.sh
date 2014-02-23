@@ -14,7 +14,7 @@ if [ -e $VIMRC_LINK ]
 then
 	echo "$HOME/.vimrc already exists."
 else
-	ln -s .vim/vimrc $HOME/.vimrc
+	ln -s .vim/vimrc $VIMRC_LINK
 fi
 
 if [ ! -d "bundle" ]
