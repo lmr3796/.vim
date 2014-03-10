@@ -39,14 +39,19 @@ set  wildmenu
 set  winaltkeys=no
 set  mouse=i
 
+" Set indents
+set ts=4 sw=4
+
+" Expand tabs only for ruby and python
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype python setlocal ts=4 sts=4 sw=4 expandtab
+
+
 set modeline
 set mat=15
 "set ignorecase
 "set smartcase
 set ruler is nowrap ai si sm bs=indent,eol,start 
-set ts=4
-set sw=4
-set expandtab
 set ff=unix
 set nohls
 " encoding solutions
