@@ -42,14 +42,16 @@ set  mouse=i
 " Set indents
 set ts=4 sw=4
 
+" Set foldings
 set foldmethod=syntax
 set foldlevel=1 
 set foldlevelstart=99
+autocmd Filetype ruby let ruby_fold=1
+highlight Folded ctermfg=white ctermbg=NONE
 
 
 " Expand tabs only for ruby and python
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype ruby let ruby_fold=1
 autocmd Filetype python setlocal ts=4 sts=4 sw=4 expandtab
 
 
@@ -180,7 +182,6 @@ highlight User3 term=underline cterm=underline ctermfg=yellow
 highlight User4 term=underline cterm=underline ctermfg=white
 highlight User5 ctermfg=cyan
 highlight User6 ctermfg=white 
-
 highlight Comment ctermfg=blue
 
 if version >= 700
@@ -227,5 +228,4 @@ if version >= 700
 	map gp :tabp<CR>
 	map gk :tabclose<CR>
 end
-highlight Comment ctermfg=blue
 
