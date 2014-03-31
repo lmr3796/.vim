@@ -43,9 +43,13 @@ set  mouse=i
 set ts=4 sw=4
 
 set foldmethod=syntax
+set foldlevel=1 
+set foldlevelstart=99
+
 
 " Expand tabs only for ruby and python
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype ruby let ruby_fold=1
 autocmd Filetype python setlocal ts=4 sts=4 sw=4 expandtab
 
 
