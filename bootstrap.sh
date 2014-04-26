@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Persistent undo file
+mkdir -p undodir
+
 set -e -u
 
 VIMRC_LINK="${HOME}/.vimrc"

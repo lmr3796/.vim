@@ -26,6 +26,9 @@ set bs=2
 "bind ! to :! 
 nmap ! :! 
 
+" Persistent undo
+set undofile
+set undodir=~/.vim/undodir
 
 " scroll jump
 set sj=1
