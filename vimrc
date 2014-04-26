@@ -63,9 +63,8 @@ set ruler is ai si sm bs=indent,eol,start
 set ff=unix
 set nohls
 " encoding solutions
-set fencs=utf-8
-",big5,euc-jp,utf-bom,iso8859-1
-set fenc=utf-8 enc=utf-8 tenc=utf-8
+set fencs=utf-8,big5,euc-jp,utf-bom,iso8859-1
+set enc=utf-8 tenc=utf-8
 set nobackup
 set wrap linebreak showbreak=\ \ \ \ \ \ \ \ \ \ \\
 " save view
