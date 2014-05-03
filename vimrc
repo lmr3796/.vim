@@ -49,13 +49,7 @@ set ts=4 sw=4
 set foldmethod=syntax
 set foldlevel=1 
 set foldlevelstart=99
-autocmd Filetype ruby let ruby_fold=1
 highlight Folded ctermfg=white ctermbg=NONE
-
-
-" Expand tabs only for ruby and python
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype python setlocal ts=4 sts=4 sw=4 expandtab
 
 
 set modeline
@@ -65,6 +59,7 @@ set mat=15
 set ruler is ai si sm bs=indent,eol,start 
 set ff=unix
 set nohls
+
 " encoding solutions
 set fencs=utf-8,big5,euc-jp,utf-bom,iso8859-1
 set enc=utf-8 tenc=utf-8
