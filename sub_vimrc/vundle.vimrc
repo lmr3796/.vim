@@ -17,7 +17,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 
 " Language support
-Bundle 'jnwhiteh/vim-golang'
+"Bundle 'jnwhiteh/vim-golang'
 
 " Latex build
 Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
