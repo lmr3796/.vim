@@ -6,6 +6,10 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Latex tikz
+au BufNewFile,BufRead *.tikz set filetype=tex
+
+
 " Load vimrc for each plugin.
 runtime! sub_vimrc/*.vimrc
 
