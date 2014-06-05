@@ -75,6 +75,18 @@ nm			<s-tab> v<
 xmap		<tab> >gv
 xmap		<s-tab> <gv
 
+" Fast escape
+set timeoutlen=20
+map df <Esc>
+map fd <Esc>
+map fj <Esc>
+map jk <Esc>
+map kj <Esc>
+map! df <Esc>
+map! fd <Esc>
+map! fj <Esc>
+map! jk <Esc>
+map! kj <Esc>
 
 " command mode mapping:
 " command line jump to head , end
