@@ -19,8 +19,6 @@ endif
 
 " show line numbers
 set nu
-
-" 游標移動後, 一樣可以用 backsapce, del 等刪除動作
 set bs=2
 
 "bind ! to :! 
@@ -49,7 +47,6 @@ set ts=4 sw=4
 set foldmethod=syntax
 set foldlevel=1 
 set foldlevelstart=99
-highlight Folded ctermfg=white ctermbg=NONE
 
 
 set modeline
@@ -76,7 +73,7 @@ xmap		<tab> >gv
 xmap		<s-tab> <gv
 
 " Fast escape
-set timeoutlen=20
+set timeoutlen=25
 map df <Esc>
 map fd <Esc>
 map fj <Esc>
@@ -185,6 +182,11 @@ endfunction
 " set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ <\ %2*%P%4*\ >
 
 " lightline.vim
+if !has('gui_running')
+  set t_Co=256
+endif
+colorscheme desert
+set showtabline=2
 set laststatus=2
 set noshowmode " Since lightline has emulated one
 
