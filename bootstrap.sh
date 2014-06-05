@@ -1,11 +1,45 @@
-#!/bin/bash
+#!/bin/sh -eu
 
-# Persistent undo file
-mkdir -p undodir
+DOTVIM_ROOT="$HOME/.vim"
+: ${VIMRC_LINK:=$HOME/.vimrc}
+: ${XDG_CONFIG_HOME:=$HOME/.config}
 
-set -e -u
+font_setup(){
+	FONT_CONF_D=$XDG_CONFIG_HOME/fontconfig/conf.d
+	if [ ! -d ~/.fonts ]
+	then
+		mkdir ~/.fonts
+	fi
+	cp fonts/*.otf ~/.fonts
+	if [ ! -d $FONT_CONF_D ]
+	then
+		mkdir -p $FONT_CONF_D
+	fi
+	cp fonts/*.conf $FONT_CONF_D
+	fc-cache -vf ~/.fonts
+}
 
-VIMRC_LINK="${HOME}/.vimrc"
+vundle_setup(){
+	if [ ! -d "bundle" ]
+	then
+		mkdir bundle
+	fi
+	cd bundle
+	if [ ! -d "vundle" ]
+	then
+		git clone https://github.com/gmarik/vundle.git
+	else
+		echo "vundle already cloned."
+	fi
+}
+
+plugin_setup(){
+	if [ -d "vundle" ]
+	then
+		vim -c BundleInstall -c qa
+	fi
+}
+
 
 if [ $PWD != "$HOME/.vim" ]
 then
@@ -20,14 +54,6 @@ else
 	ln -s .vim/vimrc $VIMRC_LINK
 fi
 
-if [ ! -d "bundle" ]
-then
-	mkdir bundle
-fi
-cd bundle
-if [ ! -d "vundle" ]
-then
-	git clone https://github.com/gmarik/vundle.git
-else
-	echo "vundle already cloned."
-fi
+font_setup
+vundle_setup
+plugin_setup

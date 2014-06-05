@@ -15,13 +15,11 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
+Bundle 'jcf/vim-latex'
+Bundle 'itchyny/lightline.vim'
 
 " Language support
-Bundle 'jnwhiteh/vim-golang'
-
-" Latex build
-Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
-
+" Bundle 'jnwhiteh/vim-golang'
 
 filetype plugin indent on
 
