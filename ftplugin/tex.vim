@@ -6,7 +6,7 @@ setlocal textwidth=72
 
 " This is mostly a matter of taste. but LaTeX looks good with just a bit
 " of indentation.
-setlocal sw=2
+setlocal ts=2 sts=2 sw=2 expandtab
 
 " TIP: if you write your \label's as \label{fig:something}, then if you
 " type in \ref{fig: and press <C-n> you will automatically cycle through
