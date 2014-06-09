@@ -24,9 +24,9 @@ let g:lightline = {
 	\ 'tab_component_function': {
 	\   'filename_tab': 'MyTabFilename',
 	\ },
-	\ 'separator': { 'left': ''},
+	\ 'separator': { 'left': '', 'right': ''  },
 	\ 'subseparator': { 'left': '', 'right': '' },
-	\ }
+	\ } "Current setting based on patched fonts of powerline, not vim-powerline
 
 function! s:TinyCondition()
 	return winwidth(0) < 66
