@@ -82,17 +82,17 @@ xmap		<tab> >gv
 xmap		<s-tab> <gv
 
 " Fast escape
-set timeoutlen=25
-map df <Esc>
-map fd <Esc>
-map fj <Esc>
-map jk <Esc>
-map kj <Esc>
-map! df <Esc>
-map! fd <Esc>
-map! fj <Esc>
-map! jk <Esc>
-map! kj <Esc>
+"set timeoutlen=25
+"map df <Esc>
+"map fd <Esc>
+"map fj <Esc>
+"map jk <Esc>
+"map kj <Esc>
+"map! df <Esc>
+"map! fd <Esc>
+"map! fj <Esc>
+"map! jk <Esc>
+"map! kj <Esc>
 
 " command mode mapping:
 " command line jump to head , end
@@ -213,25 +213,8 @@ if version >= 700
 	imap <C-c> <ESC>:tabnew<CR>
 	map  <F4> :set invcursorline<CR>
 
-"	map  [A  :tabp<CR>
-"	imap [A  <ESC>:tabp<CR>i
-"	map  [B  :tabn<CR>
-"	imap [B  <ESC>:tabn<CR>i
-"	map  [C  :tabn<CR>
-"	imap [C  <ESC>:tabn<CR>i
-"	map  [D  :tabp<CR>
-"	imap [D  <ESC>:tabp<CR>i
 	
-	
-	"map  <C-a-k>  <C-A-w>k
-	"imap <C-a-k>  <ESC><C-A-w>ki
-	"map  <C-a-j>  <C-A-w>j
-	"imap <C-a-j>  <ESC><C-A-w>ji
-	"map  <C-a-l>  <C-A-w>l
-	"imap <C-a-l>  <ESC><C-A-w>li
-	"map  <C-a-h>  <C-A-w>h
-	"imap <C-a-h>  <ESC><C-A-w>hi
-	
+	" Fast tab switching
 	map  <C-h>  :tabp<CR>
 	imap <C-h>  <ESC>:tabp<CR>i
 	map  <C-l>  :tabn<CR>
