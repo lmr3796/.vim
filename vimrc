@@ -6,18 +6,17 @@ filetype on
 filetype plugin on
 filetype indent on
 
+
+" Load vimrc for each plugin.
+runtime! sub_vimrc/*.vimrc
+
 " Latex tikz
 au BufNewFile,BufRead *.tikz set filetype=tex
-
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 "
 let g:tex_flavor='latex'
-
-
-" Load vimrc for each plugin.
-runtime! sub_vimrc/*.vimrc
 
 " If no screen, use color term
 if ($TERM == "vt100")
