@@ -43,11 +43,11 @@ set sj=1
 set so=6
 set cursorline
 "set  wildmode=longest,list
-set  wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
+set wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
 " set wildoptions
-set  wildmenu
-set  winaltkeys=no
-set  mouse=i
+set wildmenu
+set winaltkeys=no
+set mouse=a
 
 " Set indents
 set ts=4 sw=4
