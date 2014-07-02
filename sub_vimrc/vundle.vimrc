@@ -21,6 +21,7 @@ Bundle 'itchyny/lightline.vim'
 
 " Language support
 " Bundle 'jnwhiteh/vim-golang'
+Bundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
