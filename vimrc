@@ -51,6 +51,7 @@ set mouse=a
 
 " Set indents
 set ts=4 sw=4
+set expandtab
 
 " Set foldings
 set foldmethod=syntax
@@ -65,6 +66,7 @@ set mat=15
 set ruler is ai si sm bs=indent,eol,start 
 set ff=unix
 set nohls
+set noeol
 
 " encoding solutions
 set fencs=utf-8,big5,euc-jp,utf-bom,iso8859-1
