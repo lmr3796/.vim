@@ -51,7 +51,6 @@ set mouse=a
 
 " Set indents
 set ts=4 sw=4
-set expandtab
 
 " Set foldings
 set foldmethod=syntax
