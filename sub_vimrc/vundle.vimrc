@@ -29,5 +29,14 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'marijnh/tern_for_vim'
 
+" PHP
+Plugin 'StanAngeloff/php.vim'
+Plugin 'swekaj/php-foldexpr.vim'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'Shougo/vimproc'
+Plugin 'Shougo/unite.vim'
+Plugin 'm2mdas/phpcomplete-extended'
+
 filetype plugin indent on
 

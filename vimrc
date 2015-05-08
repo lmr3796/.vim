@@ -1,10 +1,10 @@
 " lazyscript vimrc ====================================
 " author: c9s
 set nocompatible
-syntax on
 filetype on
 filetype plugin on
 filetype indent on
+syntax on
 
 
 " Load vimrc for each plugin.
@@ -236,4 +236,3 @@ if version >= 700
 	map gp :tabp<CR>
 	map gk :tabclose<CR>
 end
-
