@@ -1,11 +1,11 @@
 " lazyscript vimrc ====================================
 " author: c9s
+set tabpagemax=100
 set nocompatible
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
-
 
 " Load vimrc for each plugin.
 runtime! sub_vimrc/*.vimrc
