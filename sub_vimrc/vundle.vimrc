@@ -28,6 +28,7 @@ Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'elzr/vim-json'
 
 " PHP
 Plugin 'StanAngeloff/php.vim'
@@ -37,6 +38,11 @@ Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'Shougo/vimproc'
 Plugin 'Shougo/unite.vim'
 Plugin 'm2mdas/phpcomplete-extended'
+
+Plugin 'mustache/vim-mustache-handlebars'
+
+" Groovy
+Plugin 'groovy.vim'
 
 filetype plugin indent on
 
