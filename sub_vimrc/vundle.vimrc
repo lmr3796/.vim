@@ -28,6 +28,7 @@ Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'mxw/vim-jsx'
 
 " PHP
 Plugin 'StanAngeloff/php.vim'
