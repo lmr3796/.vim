@@ -54,6 +54,8 @@ else
 	ln -s .vim/vimrc $VIMRC_LINK
 fi
 
-font_setup
+if [[ `uname` == "*Linux*" ]]; then
+	font_setup
+fi
 vundle_setup
 plugin_setup
