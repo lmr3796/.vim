@@ -18,6 +18,9 @@ au BufNewFile,BufRead *.tikz set filetype=tex | set textwidth=0
 "
 let g:tex_flavor='latex'
 
+" JS
+au FileType javascript call JavaScriptFold()
+
 " If no screen, use color term
 if ($TERM == "vt100")
   " xterm-color / screen
