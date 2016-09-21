@@ -46,5 +46,8 @@ Plugin 'mustache/vim-mustache-handlebars'
 " Groovy
 Plugin 'groovy.vim'
 
+" Less
+Plugin 'groenewege/vim-less'
+
 filetype plugin indent on
 
