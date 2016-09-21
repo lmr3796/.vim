@@ -7,6 +7,10 @@ filetype plugin on
 filetype indent on
 syntax on
 
+" Yahoo style...
+au BufNewFile,BufRead *.inc,*.ros set filetype=php
+au BufNewFile,BufRead *.hb.html set filetype=mustache
+
 " Load vimrc for each plugin.
 runtime! sub_vimrc/*.vimrc
 
