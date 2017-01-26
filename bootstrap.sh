@@ -1,4 +1,4 @@
-#!/bin/sh -eu
+#!/bin/bash -eu
 
 DOTVIM_ROOT="$HOME/.vim"
 : ${VIMRC_LINK:=$HOME/.vimrc}
