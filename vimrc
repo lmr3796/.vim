@@ -30,6 +30,11 @@ if ($TERM == "vt100")
   set t_AB=[4%p1%dm
 endif
 
+" For split resizing by mouse inside tmux-2
+if has("mouse_sgr")
+  set ttymouse=sgr
+endif
+
 " show line numbers
 set nu
 set bs=2
@@ -240,3 +245,5 @@ if version >= 700
 	map gp :tabp<CR>
 	map gk :tabclose<CR>
 end
+
+" vim: expandtab sw=4 ts=4
