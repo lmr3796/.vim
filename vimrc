@@ -65,7 +65,7 @@ set ts=4 sw=4
 set foldmethod=syntax
 set foldlevel=1 
 set foldlevelstart=99
-
+set omnifunc=syntaxcomplete#Complete
 
 set modeline
 set mat=15
