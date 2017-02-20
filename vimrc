@@ -31,9 +31,14 @@ if ($TERM == "vt100")
 endif
 
 " For split resizing by mouse inside tmux-2
+set mouse=a
 if has("mouse_sgr")
+    echom 'jizz2'
   set ttymouse=sgr
+elseif &term =~ '^xterm'
+  set ttymouse=xterm2
 endif
+
 
 " show line numbers
 set nu
@@ -56,7 +61,6 @@ set wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
 " set wildoptions
 set wildmenu
 set winaltkeys=no
-set mouse=a
 
 " Set indents
 set ts=4 sw=4
