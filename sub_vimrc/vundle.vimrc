@@ -22,6 +22,7 @@ Plugin 'itchyny/lightline.vim'
 " Language support
 " Plugin 'jnwhiteh/vim-golang'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'motus/pig.vim'
 
 " Javascript
 Plugin 'moll/vim-node'
