@@ -33,7 +33,6 @@ endif
 " For split resizing by mouse inside tmux-2
 set mouse=a
 if has("mouse_sgr")
-    echom 'jizz2'
   set ttymouse=sgr
 elseif &term =~ '^xterm'
   set ttymouse=xterm2
