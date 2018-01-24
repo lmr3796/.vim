@@ -4,6 +4,8 @@ DOTVIM_ROOT="$HOME/.vim"
 : ${VIMRC_LINK:=$HOME/.vimrc}
 : ${XDG_CONFIG_HOME:=$HOME/.config}
 
+TERN_CONFIG="$HOME/.tern-config"
+
 font_setup(){
 	FONT_CONF_D=$XDG_CONFIG_HOME/fontconfig/conf.d
 	if [ ! -d ~/.fonts ]
@@ -53,6 +55,14 @@ then
 else
 	ln -s .vim/vimrc $VIMRC_LINK
 fi
+
+if [ -e $TERN_CONFIG ]
+then
+	echo "$TERN_CONFIG already exists."
+else
+	ln -s .vim/tern-config $TERN_CONFIG
+fi
+
 
 if [[ `uname` == *Linux* ]]; then
 	font_setup
